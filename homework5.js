@@ -19,6 +19,6 @@ function job(data) {
     }
   });
 }
-job("A").then((resp) => console.log(resp));
+//job("A").then((resp) => console.log(resp));
 job(1).then((resp) => console.log(resp));
 job(2).then((resp) => console.log(resp));
