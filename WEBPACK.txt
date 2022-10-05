@@ -1,0 +1,40 @@
+QUe es webpack
+
+Es un empaquetador de modulos
+
+
+Pero gracias a los componentes plugin puede hacer tareas o task runner 
+
+Para entenderlo para la apps web tenemos muchos modulos 
+
+entonces lo que hace el webpack es tomar todos estos modulos .cjs .sass .png 
+Y los transforma en assets que al final puede entender el navegador como por ejemplo .js .css .jpg .png 
+
+Ahora que sistema de modulos se utiliza ejemplo CommonJs que es el que utiliza node js 
+
+
+export.calc=(a,b)=>a+b;
+
+const myModule = required('path/to/myModule');
+
+console.log(myModule.cal(1,2));
+
+
+ES2015 que es el nuevo sistema 
+ejemplo 
+
+export const calc=(a,b)=>a+b;
+
+import {calc} from 'path/to/myModule'
+
+console.log(cal(1,2));
+
+
+
+Entry point:  Dentro de una aplicación tenemos que indicar cuales son los puntos de entrada por los que queremos que un empaquetador empiece a trabajar. Tenemos que indicarlo para que se empiece a generar el grafo de dependencias. ex /src/main.js. 
+
+Output: Una vez que hemos decidido que punto o puntos de entrada queremos en nuestra configuración, es el turno de indicarle a Webpack donde tiene que dejar los paquetes que ha ido generando.
+
+De esta forma estamos indicando que queremos que lo empaquetado se guarde en la ruta dist y con el nombre de fichero app.min.js.
+
+
