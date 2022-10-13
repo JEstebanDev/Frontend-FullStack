@@ -1,0 +1,67 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  text-align: -webkit-center;
+  --angle: 180deg;
+  background: linear-gradient(
+    var(--angle),
+    rgb(255, 150, 150),
+    rgb(144, 144, 255)
+  );
+}
+.card {
+  --spacing: 2rem;
+  display: flex;
+  width: 30%;
+  flex: 2 100px;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--spacing);
+  margin: var(--spacing);
+  background-color: rgb(255, 255, 255);
+}
+p {
+  --value: 15;
+  --unit: px;
+  --pixel_converter: 1px;
+  font-size: calc(var(--value) * var(--pixel_converter));
+}
+button {
+  --spacing: 1rem;
+  padding: var(--spacing);
+  font-size: var(--spacing);
+  --h: 100;
+  --s: 50%;
+  --l: 50%;
+  --a: 2;
+  --spread: 5px;
+  box-shadow: 0 0 20px var(--spread) rgb(113, 225, 85);
+  background: hsl(var(--h) var(--s) var(--l) / var(--a));
+}
+button:hover {
+  /* Change the lightness on hover */
+  --l: 75%;
+}
+button:focus {
+  /* Change the saturation on focus */
+  --s: 75%;
+}
+button[disabled] {
+  /* Make look disabled */
+  --s: 0%;
+  --a: 0.5;
+}
+
+body {
+  --bg-color: white;
+  --text-color: black;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+@media screen and (max-width: 900px) {
+  body {
+    --bg-color: black;
+    --text-color: rgb(159, 80, 80);
+  }
+}
