@@ -13,9 +13,9 @@ export default function StudentCard(props) {
           <span>{item.role}</span>
         </li>
         <li>
-          <strong>Country: </strong>
+          <strong>Location: </strong>
           <img src={item.srcCountry} width="22" height="14" />
-          <span>{item.country}</span>
+          <span>{item.location}</span>
         </li>
       </div>
     );

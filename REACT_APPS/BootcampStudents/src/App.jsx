@@ -6,38 +6,38 @@ function App() {
     {
       name: "Diego Morales",
       role: "Quiz Api C#",
-      country: "Bolivia",
+      location: "Bolivia",
       srcCountry: "https://www.sic-info.org/wp-content/uploads/2014/01/bo.png",
     },
     {
       name: "Edgar Roman",
       role: "DevOps",
-      country: "Mexico",
+      location: "Mexico",
       srcCountry: "https://www.sic-info.org/wp-content/uploads/2014/01/mx.png",
     },
     {
       name: "Esteban Castaño",
       role: "Backend C#",
-      country: "Colombia",
+      location: "Colombia",
       srcCountry: "https://www.sic-info.org/wp-content/uploads/2014/01/co.png",
     },
     {
-      name: "Joaquin Aman",
+      name: "Joaquín Aman",
       role: "Quiz Api C#",
-      country: "Argentina",
+      location: "Argentina",
       srcCountry: "https://www.sic-info.org/wp-content/uploads/2014/01/ar.png",
     },
 
     {
-      name: "Jose Martinez",
+      name: "Jose Martínez",
       role: "Frontend React",
-      country: "Peru",
+      location: "Perú",
       srcCountry: "https://www.sic-info.org/wp-content/uploads/2014/01/pe.png",
     },
     {
       name: "Xochihua Sotarriba",
       role: "Frontend React",
-      country: "Mexico",
+      location: "Mexico",
       srcCountry: "https://www.sic-info.org/wp-content/uploads/2014/01/mx.png",
     },
   ];
