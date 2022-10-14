@@ -1,4 +1,5 @@
 import "./App.css";
+import StudentBoard from "./components/StudentBoard";
 import StudentCard from "./components/StudentCard";
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
 
   return (
     <div className="App">
-      <StudentCard listStudents={listStudents}></StudentCard>
+      <StudentBoard listStudents={listStudents}> </StudentBoard>
     </div>
   );
 }

@@ -1,23 +1,23 @@
 import React from "react";
 
-export default function StudentCard(props) {
-  return props.listStudents.map(function (item, i) {
-    return (
-      <div className="card" key={i}>
-        <li>
-          <strong>Name: </strong>
-          <span>{item.name}</span>
-        </li>
-        <li>
-          <strong>Role: </strong>
-          <span>{item.role}</span>
-        </li>
-        <li>
-          <strong>Location: </strong>
-          <img src={item.srcCountry} width="22" height="14" />
-          <span>{item.location}</span>
-        </li>
-      </div>
-    );
-  });
+export default function StudentCard({
+  item: { name, role, srcCountry, location },
+}) {
+  return (
+    <div className="card animate__animated animate__tada animate__repeat-2">
+      <li>
+        <strong>Name: </strong>
+        <span>{name}</span>
+      </li>
+      <li>
+        <strong>Role: </strong>
+        <span>{role}</span>
+      </li>
+      <li>
+        <strong>Location: </strong>
+        <img src={srcCountry} width="22" height="14" />
+        <span>{location}</span>
+      </li>
+    </div>
+  );
 }
