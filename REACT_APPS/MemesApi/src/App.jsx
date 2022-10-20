@@ -3,7 +3,6 @@ import RequestApi from "./utils/RequestApi";
 
 function App() {
   const listMemes = RequestApi();
-  console.log(listMemes.title);
   return (
     <div className="app">
       {listMemes.map(function (item, i) {
