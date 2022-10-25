@@ -4,7 +4,7 @@ export default function RequestApi() {
   const [memes, setMemes] = useState([]);
   useEffect(() => {
     setTimeout(() => {
-      const fetchData = async () => {
+      const fetchData = () => {
         const options = {
           method: "GET",
           url: "https://programming-memes-reddit.p.rapidapi.com/",
@@ -25,7 +25,7 @@ export default function RequestApi() {
           });
       };
       fetchData();
-    }, 0);
+    }, 3000);
   }, []);
   return memes;
 }
