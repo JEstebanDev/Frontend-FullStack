@@ -27,5 +27,4 @@ const request = memoization(async id=>{
 })
 
 request(1).then(r=>console.log(r))
-request(2).then(r=>console.log(r))
 request(1).then(r=>console.log(r))
