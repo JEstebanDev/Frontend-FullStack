@@ -6,6 +6,7 @@ import ShowData from "./components/ShowData";
 function App() {
   const [products, setProducts] = useState([]);
   const addProduct = (product) => {
+    console.log(product);
     setProducts([...products, product]);
   };
   return (

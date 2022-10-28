@@ -5,10 +5,11 @@ export default function Form({ addProduct }) {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors, reset },
   } = useForm();
   const onSubmit = (data) => {
     addProduct(data);
+    reset();
   };
   return (
     <div>
