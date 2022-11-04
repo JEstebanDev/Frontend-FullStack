@@ -47,6 +47,7 @@ export default function Form({ optionForm, updateParent }) {
               return (
                 <div className="inputs" key={index}>
                   <label htmlFor={input.inputName}>{input.inputName}</label>
+                  <br />
                   <input
                     className={errors[input.inputName] ? "input-error" : null}
                     type={input.inputValue}
@@ -56,6 +57,7 @@ export default function Form({ optionForm, updateParent }) {
               );
             })
           : null}{" "}
+        <br />
         <button type="submit">Send</button>
       </form>
     </div>
