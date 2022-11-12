@@ -1,0 +1,135 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: black;
+  border-color: black 1px;
+  border-radius: 10px;
+  background-color: white;
+  width: 99.1vw;
+}
+body {
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  background-color: #ff6e6e;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  margin: 1rem;
+}
+.nav-links {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  background-color: #ff6e6e;
+  flex-direction: column;
+}
+.listCards {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.content {
+  text-align: -webkit-center;
+}
+.card {
+  margin: 1rem;
+  width: 14rem;
+  background-color: #ffd76e;
+  border-radius: 5px;
+  border: solid 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+.info-form {
+  text-align: center;
+  width: 17rem;
+}
+form {
+  margin: 1rem;
+}
+
+i {
+  font-size: 1.5rem;
+}
+span {
+  color: #ff2424;
+}
+
+.purple-color {
+  color: #90d0ff;
+}
+.red-color {
+  color: #ff4b4b;
+}
+a {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+.task {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.options {
+  margin-bottom: 1rem;
+}
+textarea {
+  width: 220px;
+  height: 80px;
+}
+
+.inputs {
+  font-size: 18px;
+  border-radius: 3px;
+  border: solid 2px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: black;
+}
+
+.editButton {
+  background-color: #c2b8ff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.deleteButton {
+  background-color: #ff6e6e;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,17 @@
+// Vitest Snapshot v1
+
+exports[`testing the component > should render the CreateEditTodo and take snapshot 1`] = `
+<div>
+  <div
+    class="listCards"
+  />
+</div>
+`;
+
+exports[`testing the component > should render the TodoList and take snapshot 1`] = `
+<div>
+  <div
+    class="listCards"
+  />
+</div>
+`;
