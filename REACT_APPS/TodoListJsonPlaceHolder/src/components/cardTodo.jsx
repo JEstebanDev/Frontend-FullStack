@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import { editTodoList, removeTodoList } from "../utils/Api";
+import { removeTodoList } from "../utils/Api";
 export default function CardTodo({ item }) {
   const navigation = useNavigate();
 

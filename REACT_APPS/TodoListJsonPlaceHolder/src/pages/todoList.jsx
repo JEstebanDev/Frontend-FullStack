@@ -6,7 +6,7 @@ export default function TodoList() {
   const result = getTodoList();
   const list = result.slice(1, 33);
   return (
-    <div className="listCards">
+    <div className="listCards animate__animated animate__fadeIn">
       {list.map(function (item, i) {
         return <CardTodo key={i} item={item} />;
       })}

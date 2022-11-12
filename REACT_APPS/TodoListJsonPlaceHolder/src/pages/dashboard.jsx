@@ -5,7 +5,7 @@ import icon from "../assets/vite.svg";
 export default function Dashboard() {
   return (
     <div className="container">
-      <div className="navbar">
+      <div className="navbar animate__animated animate__bounceInDown">
         <div className="logo">
           <img src={icon} width="50px" />
           <h3>TODO List</h3>

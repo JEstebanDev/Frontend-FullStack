@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -7,7 +7,6 @@ import { editTodoList, getTodoListById, setTodoList } from "../utils/Api";
 export default function CreateEditTodo() {
   const navigation = useNavigate();
   const { id } = useParams();
-  const [ValueEdit, setValueEdit] = useState({});
 
   const {
     register,
@@ -15,6 +14,16 @@ export default function CreateEditTodo() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  if (id != null) {
+    const result = getTodoListById(id);
+    setValue("id", result.id);
+    setValue("task", result.title);
+    setValue("completed", result.completed);
+  } else {
+    setValue("id", null);
+    setValue("task", null);
+    setValue("completed", "true");
+  }
   const onSubmit = (data) => {
     if (id != null) {
       editTodoList(data).then((response) => {
@@ -31,19 +40,9 @@ export default function CreateEditTodo() {
       });
     }
   };
-  if (id != null) {
-    const result = getTodoListById(id);
-    setValue("id", result.id);
-    setValue("task", result.title);
-    setValue("completed", result.completed);
-  } else {
-    setValue("id", null);
-    setValue("task", null);
-    setValue("completed", "true");
-  }
 
   return (
-    <div className="card info-form">
+    <div className="card info-form animate__animated animate__bounceIn">
       <h3>
         {id ? "Edit" : "Create"} a todo task <i className="ri-add-box-fill"></i>
       </h3>
