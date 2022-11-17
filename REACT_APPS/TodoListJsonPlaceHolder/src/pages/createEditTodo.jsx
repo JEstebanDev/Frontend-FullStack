@@ -46,20 +46,24 @@ export default function CreateEditTodo() {
       <h3>
         {id ? "Edit" : "Create"} a todo task <i className="ri-add-box-fill"></i>
       </h3>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form aria-label="form" onSubmit={handleSubmit(onSubmit)}>
         <input
+          data-testid="idtask"
           className="inputs"
           placeholder="id user"
           {...register("id", { required: true })}
         />
-        {errors.id && <span>This field is required</span>}
+        {errors.id && <span data-testid="message">This field is required</span>}
         <textarea
+          data-testid="textodo"
           type="text"
           className="inputs"
           placeholder="write your task"
           {...register("task", { required: true })}
         />
-        {errors.task && <span>This field is required</span>}
+        {errors.task && (
+          <span data-testid="message">This field is required</span>
+        )}
         <br />
         <select className="inputs" {...register("completed")}>
           <option value="true">Yes</option>
@@ -68,7 +72,12 @@ export default function CreateEditTodo() {
         <br />
         <br />
         {id == null ? (
-          <input className="button editButton" value="Submit" type="submit" />
+          <input
+            data-testid="submit"
+            className="button editButton"
+            value="Submit"
+            type="submit"
+          />
         ) : (
           <input className="button editButton" value="Edit" type="submit" />
         )}

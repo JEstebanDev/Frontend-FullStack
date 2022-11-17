@@ -1,0 +1,58 @@
+// Vitest Snapshot v1
+
+exports[`testing the component > should render the CreateEditTodo and take snapshot 1`] = `
+<div>
+  <div
+    class="card info-form animate__animated animate__bounceIn"
+  >
+    <h3>
+      Create
+       a todo task 
+      <i
+        class="ri-add-box-fill"
+      />
+    </h3>
+    <form
+      aria-label="form"
+    >
+      <input
+        class="inputs"
+        data-testid="idtask"
+        name="id"
+        placeholder="id user"
+      />
+      <textarea
+        class="inputs"
+        data-testid="textodo"
+        name="task"
+        placeholder="write your task"
+        type="text"
+      />
+      <br />
+      <select
+        class="inputs"
+        name="completed"
+      >
+        <option
+          value="true"
+        >
+          Yes
+        </option>
+        <option
+          value="false"
+        >
+          No
+        </option>
+      </select>
+      <br />
+      <br />
+      <input
+        class="button editButton"
+        data-testid="submit"
+        type="submit"
+        value="Submit"
+      />
+    </form>
+  </div>
+</div>
+`;

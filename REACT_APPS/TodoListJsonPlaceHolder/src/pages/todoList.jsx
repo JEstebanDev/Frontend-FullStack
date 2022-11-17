@@ -4,7 +4,7 @@ import getTodoList from "../utils/Api";
 
 export default function TodoList() {
   const result = getTodoList();
-  const list = result.slice(1, 33);
+  const list = result.slice(1, 16);
   return (
     <div className="listCards animate__animated animate__fadeIn">
       {list.map(function (item, i) {

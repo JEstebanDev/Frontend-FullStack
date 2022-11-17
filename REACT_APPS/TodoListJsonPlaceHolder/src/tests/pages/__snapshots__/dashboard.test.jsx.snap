@@ -1,0 +1,48 @@
+// Vitest Snapshot v1
+
+exports[`testing the component > should render the Dashboard and take snapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="navbar animate__animated animate__bounceInDown"
+    >
+      <div
+        class="logo"
+      >
+        <img
+          src="/src/assets/vite.svg"
+          width="50px"
+        />
+        <h3>
+          TODO List
+        </h3>
+      </div>
+      <div
+        class="nav-links"
+      >
+        <a
+          href="/list"
+        >
+          Dashboard 
+          <i
+            class="ri-list-check"
+          />
+        </a>
+        <a
+          href="/create"
+        >
+          Create a todo 
+          <i
+            class="ri-add-circle-fill"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      class="content"
+    />
+  </div>
+</div>
+`;
