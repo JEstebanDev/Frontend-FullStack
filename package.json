@@ -20,5 +20,9 @@
   "homepage": "https://github.com/JEstebanDev/Frontend#readme",
   "dependencies": {
     "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9.3"
   }
 }
