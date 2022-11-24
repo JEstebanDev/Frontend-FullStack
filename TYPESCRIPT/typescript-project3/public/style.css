@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(45, 45, 45);
+  height: 100vh;
+}
+
+.text {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+.title {
+  color: antiquewhite;
+  font-size: 4rem;
+}
+
+.subtitle {
+  color: rgb(204, 164, 111);
+  font-size: 2rem;
+}
