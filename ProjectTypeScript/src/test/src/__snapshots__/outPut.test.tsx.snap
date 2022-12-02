@@ -1,0 +1,85 @@
+// Vitest Snapshot v1
+
+exports[`working propertly > should render the DragDrop 1`] = `
+<div>
+  <div
+    class="listCards"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root card css-1ri6ub7-MuiPaper-root-MuiCard-root"
+    >
+      <img
+        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+        height="200"
+        src="blob:http://127.0.0.1:5173/f7f25ab6-0ab0-4216-aeb4-3668a774c27f"
+      />
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <div
+          class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+        >
+          Somos un
+Equipo
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`working propertly > should render the OutPut 1`] = `
+<div>
+  <div
+    class="listCards"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root card css-1ri6ub7-MuiPaper-root-MuiCard-root"
+    >
+      <img
+        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+        height="200"
+        src="blob:http://127.0.0.1:5173/f7f25ab6-0ab0-4216-aeb4-3668a774c27f"
+      />
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <div
+          class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+        >
+          Somos un
+Equipo
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`working propertly > should render the OutPut 2`] = `
+<div>
+  <div
+    class="listCards"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root card css-1ri6ub7-MuiPaper-root-MuiCard-root"
+    >
+      <img
+        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+        height="200"
+        src="blob:http://127.0.0.1:5173/f7f25ab6-0ab0-4216-aeb4-3668a774c27f"
+      />
+      <div
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+      >
+        <div
+          class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+        >
+          Somos un
+Equipo
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

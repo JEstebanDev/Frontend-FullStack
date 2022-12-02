@@ -7,7 +7,6 @@ const Authorization = import.meta.env.VITE_AUTHORIZATION;
 const GoogleProjectID = import.meta.env.VITE_GOOGLE_PROJECT;
 
 export const fetchGoogleApi = (payload: Request) => {
-  console.log(payload);
   let header = {
     headers: {
       Authorization: Authorization,

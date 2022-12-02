@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`working propertly > should render the DragDrop 1`] = `
+<div>
+  <div
+    class="FilesDragAndDrop"
+  />
+</div>
+`;

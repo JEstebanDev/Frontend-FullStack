@@ -1,0 +1,113 @@
+// Vitest Snapshot v1
+
+exports[`Testing the dashboard components > should render the component Dashboard 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="FilesDragAndDrop"
+    >
+      <div
+        class="FilesDragAndDrop__area"
+      >
+        Hey, drop me some files
+        <span
+          aria-label="emoji"
+          class="area__icon"
+          role="img"
+        >
+          😎
+        </span>
+      </div>
+    </div>
+    <div
+      class="listCards"
+    />
+  </div>
+</div>
+`;
+
+exports[`first > should first 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="FilesDragAndDrop"
+    >
+      <div
+        class="FilesDragAndDrop__area"
+      >
+        Hey, drop me some files
+        <span
+          aria-label="emoji"
+          class="area__icon"
+          role="img"
+        >
+          😎
+        </span>
+      </div>
+    </div>
+    <div
+      class="listCards"
+    />
+  </div>
+</div>
+`;
+
+exports[`first > should first 2`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="FilesDragAndDrop"
+    >
+      <div
+        class="FilesDragAndDrop__area"
+      >
+        Hey, drop me some files
+        <span
+          aria-label="emoji"
+          class="area__icon"
+          role="img"
+        >
+          😎
+        </span>
+      </div>
+    </div>
+    <div
+      class="listCards"
+    />
+  </div>
+</div>
+`;
+
+exports[`first > should render the component Dashboard 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="FilesDragAndDrop"
+    >
+      <div
+        class="FilesDragAndDrop__area"
+      >
+        Hey, drop me some files
+        <span
+          aria-label="emoji"
+          class="area__icon"
+          role="img"
+        >
+          😎
+        </span>
+      </div>
+    </div>
+    <div
+      class="listCards"
+    />
+  </div>
+</div>
+`;

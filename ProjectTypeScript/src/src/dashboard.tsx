@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { ListData } from "../interfaces/listData.interface";
 import { Request } from "../interfaces/request.interface";
-import { Response } from "../interfaces/response.interfaces";
 import { fetchGoogleApi } from "../utils/googleApi";
 import DragDrop from "./components/dragDrop";
+import OutPut from "./components/outPut";
+import Swal from "sweetalert2";
 
 const requestValue: Request = {
   requests: [
@@ -20,18 +22,14 @@ const requestValue: Request = {
 };
 
 export default function Dashboard() {
-  const [previewUrl, setPreviewUrl] = useState<string>("");
+  const [Image, setImage] = useState<string>();
   const [request, setRequest] = useState<Request[]>([]);
-  const [response, setResponse] = useState<Response>();
-
+  const [Data, setData] = useState<ListData[]>([]);
+  let increment = -1;
   const onUpload = (files: File[]) => {
-    getBase64(files[0]);
-    setPreviewUrl(URL.createObjectURL(files[0]));
-  };
-
-  function getBase64(file: File) {
+    setImage(URL.createObjectURL(files[0]));
     var reader = new FileReader();
-    reader.readAsDataURL(file);
+    reader.readAsDataURL(files[0]);
     reader.onload = () => {
       if (typeof reader.result == "string") {
         const base64 = reader.result.replace("data:image/jpeg;base64,", "");
@@ -40,20 +38,36 @@ export default function Dashboard() {
       }
     };
     reader.onerror = (error) => console.log("Error: ", error);
-  }
+  };
 
   useEffect(() => {
     if (request.length != 0) {
       fetchGoogleApi(request[request.length - 1])
         .then((result) => {
-          setResponse(result);
+          if (Image != null && result != null) {
+            setData((oldArray) => [
+              ...oldArray,
+              {
+                id: increment++,
+                image: Image,
+                text: result,
+                color: false,
+              },
+            ]);
+          }
         })
-        .catch((err) => {});
+        .catch((error) => {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "This image is not available !",
+          });
+        });
     }
   }, [request]);
 
   return (
-    <div>
+    <div className="container">
       <DragDrop onUpload={onUpload}>
         <div className="FilesDragAndDrop__area">
           Hey, drop me some files
@@ -62,8 +76,7 @@ export default function Dashboard() {
           </span>
         </div>
       </DragDrop>
-      {previewUrl && <img width={200} src={previewUrl} alt="image" />}
-      {response && <span>{response.responses[0].fullTextAnnotation.text}</span>}
+      {Data != null ? <OutPut Data={Data}></OutPut> : null}
     </div>
   );
 }
